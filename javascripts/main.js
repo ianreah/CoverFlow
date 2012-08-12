@@ -3,6 +3,6 @@ $(function () {
             function (json) {
                 var pluginInput = {};
                 pluginInput.items = json.topalbums.album;
-                $("#jQueryControlHost").coverFlow(pluginInput);
+                $("#coverFlowControlHost").coverFlow(pluginInput);
             });
 });
