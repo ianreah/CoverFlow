@@ -1,0 +1,19 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+#silverlightControlHost {
+    height: 600px;
+    margin: 5px;
+    padding: 20px 0;
+    background-color: Black;
+}
+
+#jQueryControlHost  {
+    height: 600px;
+    margin: 5px;
+    padding: 120px 0;
+    background-color: Black;
+    overflow: hidden;
+}

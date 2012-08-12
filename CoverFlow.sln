@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverFlow", "CoverFlow\CoverFlow.csproj", "{53EE7CAA-A3F8-4A3A-80AA-2AC6564C1732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverFlow.Web", "CoverFlow.Web\CoverFlow.Web.csproj", "{9B1DBE02-35AD-4C4D-9672-B541DC326A79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53EE7CAA-A3F8-4A3A-80AA-2AC6564C1732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EE7CAA-A3F8-4A3A-80AA-2AC6564C1732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EE7CAA-A3F8-4A3A-80AA-2AC6564C1732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EE7CAA-A3F8-4A3A-80AA-2AC6564C1732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1DBE02-35AD-4C4D-9672-B541DC326A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1DBE02-35AD-4C4D-9672-B541DC326A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1DBE02-35AD-4C4D-9672-B541DC326A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1DBE02-35AD-4C4D-9672-B541DC326A79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

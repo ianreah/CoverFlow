@@ -1,0 +1,51 @@
+﻿#coverFlowItems {
+    padding: 0;
+    margin: 0 0 0 50%;
+    -webkit-transition: all 0.5s;
+    -webkit-perspective: 1200;
+}
+
+#coverFlowItems > li {
+	display: inline-block;
+	opacity: 0;
+	position: relative;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),  to(rgba(255,255,255,0.4)));
+    -webkit-transition: all 0.5s;
+}
+
+#coverFlowItems > li img {
+	display: block;
+	margin: auto;
+}
+
+#coverFlowItems > li a {
+    outline-width: 0;
+}
+
+#coverFlowItems > li.active {
+    z-index: 2;
+	opacity: 1;
+    -webkit-transform: scale(2);
+}
+
+#coverFlowItems > li.left-1 {
+    z-index: 1;
+	opacity: 1;
+    -webkit-transform: scale(1.75) rotateY(60deg);
+}
+
+#coverFlowItems > li.right-1 {
+    z-index: 1;
+	opacity: 1;
+    -webkit-transform: scale(1.75) rotateY(-60deg);
+}
+
+#coverFlowItems > li.left-2 {
+	opacity: 0.8;
+    -webkit-transform: scale(1.5) rotateY(60deg);
+}
+
+#coverFlowItems > li.right-2 {
+	opacity: 0.8;
+    -webkit-transform: scale(1.5) rotateY(-60deg);
+}
