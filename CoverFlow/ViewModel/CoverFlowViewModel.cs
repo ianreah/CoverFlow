@@ -53,7 +53,7 @@ namespace CoverFlow.ViewModel
 
         public int CurrentPosition
         {
-            get { return -(CurrentItemIndex-2) * (int)Application.Current.Resources["ItemSize"]; }
+            get { return -(CurrentItemIndex) * (int)Application.Current.Resources["ItemSize"]; }
         }
 
         public string Username

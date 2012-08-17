@@ -38,9 +38,14 @@ namespace CoverFlow
         {
             if (eventArgs.PropertyName == "CurrentItemIndex")
             {
-                var storyboard = storyboardFactory.CreateStoryboard(viewModel.CurrentPosition, itemsContainer);
-                storyboard.Begin();
+                Animate();
             }
+        }
+
+        private void Animate()
+        {
+            var storyboard = storyboardFactory.CreateStoryboard(viewModel.CurrentPosition, itemsContainer);
+            storyboard.Begin();
         }
 
         private void CoverFlowView_KeyDown(object sender, KeyEventArgs e)
@@ -61,6 +66,11 @@ namespace CoverFlow
                 viewModel.PreviousItem();
                 e.Handled = true;
             }
+        }
+
+        private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            Animate();
         }
     }
 }

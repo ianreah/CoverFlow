@@ -16,7 +16,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Canvas Style="{StaticResource coverFlowViewStyle}">
+    <Canvas Style="{StaticResource coverFlowViewStyle}" SizeChanged="Canvas_SizeChanged">
         <ItemsControl x:Name="itemsContainer" ItemsSource="{Binding CoverFlowItems}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>

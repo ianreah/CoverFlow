@@ -14,7 +14,10 @@ namespace CoverFlow
         {
             var result = new Storyboard();
 
-            var animation = new DoubleAnimation {To = position, Duration = new Duration(TimeSpan.FromSeconds(0.5)), EasingFunction = new CubicEase {EasingMode = EasingMode.EaseInOut}};
+            var itemSize = (int)Application.Current.Resources["ItemSize"];
+            var outerPanel = (Panel)itemsContainer.Parent;
+
+            var animation = new DoubleAnimation { To = position-(itemSize/2)+(outerPanel.ActualWidth/2), Duration = new Duration(TimeSpan.FromSeconds(0.5)), EasingFunction = new CubicEase { EasingMode = EasingMode.EaseInOut } };
 
             Storyboard.SetTarget(animation, itemsContainer);
             Storyboard.SetTargetProperty(animation, new PropertyPath("(Canvas.Left)"));
