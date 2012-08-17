@@ -8,10 +8,10 @@
         <!-- the center of the item image (otherwise it will be from the center of the item -->
         <!-- which includes the reflection). -->
         <!-- A TranslateTransform is then used in the RenderTransform to compensate for this -->
-        <!-- TODO : get rid of hard-coded values that are relative to ItemSize (e.g., 100 should actually be ItemSize/2) -->
+        <!-- TODO : get rid of hard-coded values that are relative to ItemSize (e.g., 75 should actually be ItemSize/2) -->
         <Setter Property="Projection">
             <Setter.Value>
-                <PlaneProjection RotationY="0" GlobalOffsetY="100"/>
+                <PlaneProjection RotationY="0" GlobalOffsetY="75"/>
             </Setter.Value>
         </Setter>
         
@@ -21,7 +21,7 @@
             <Setter.Value>
                 <TransformGroup>
                     <ScaleTransform ScaleX="1" ScaleY="1"/>
-                    <TranslateTransform Y="-100" />
+                    <TranslateTransform Y="-75" />
                 </TransformGroup>
             </Setter.Value>
         </Setter>
