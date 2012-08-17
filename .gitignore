@@ -7,5 +7,8 @@ ClientBin
 *.csproj.user
 *.suo
 
+# Resharper folder
+_ReSharper.*
+
 # mstest test results
 TestResults
