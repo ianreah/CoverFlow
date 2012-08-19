@@ -11,6 +11,7 @@ using System.Windows.Shapes;
 using System.Xml.Serialization;
 using CoverFlow.ViewModel;
 using System.ComponentModel;
+using System.Windows.Browser;
 
 namespace CoverFlow
 {
@@ -32,6 +33,8 @@ namespace CoverFlow
 
             // TODO: Bind this to a user input in the UI?
             viewModel.Username = "ianreah";
+
+            HtmlPage.Plugin.Focus();
         }
 
         void ViewModelPropertyChanged(object sender, PropertyChangedEventArgs eventArgs)
