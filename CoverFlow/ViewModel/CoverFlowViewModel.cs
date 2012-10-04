@@ -138,7 +138,7 @@ namespace CoverFlow.ViewModel
                 && dataFetchResult.topalbums[0] != null)
             {
                 var results = dataFetchResult.topalbums[0].album;
-                CoverFlowItems = new ObservableCollection<CoverFlowItemViewModel>(results.Select(r => new CoverFlowItemViewModel(r)));
+                CoverFlowItems = new ObservableCollection<CoverFlowItemViewModel>(results.Select(r => new CoverFlowItemViewModel(r.url, r.image[3].Value)));
                 CurrentItemIndex = 1;
                 NextItem();
             }

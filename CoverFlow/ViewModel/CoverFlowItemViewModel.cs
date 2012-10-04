@@ -14,17 +14,19 @@ namespace CoverFlow.ViewModel
 {
     public class CoverFlowItemViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+	    public event PropertyChangedEventHandler PropertyChanged;
 
-        private readonly lfmTopalbumsAlbum lfmAlbum;
+		private readonly string url;
+		private readonly string image;
 
-        public CoverFlowItemViewModel(lfmTopalbumsAlbum lfmAlbum)
+        public CoverFlowItemViewModel(string url, string image)
         {
-            this.lfmAlbum = lfmAlbum;
+	        this.url = url;
+	        this.image = image;
         }
 
-        public string Url { get { return lfmAlbum.url; } }
-        public string Image { get { return lfmAlbum.image[3].Value; } }
+	    public string Url { get { return url; } }
+        public string Image { get { return image; } }
 
         private string visualState = "Hidden";
         public string VisualState

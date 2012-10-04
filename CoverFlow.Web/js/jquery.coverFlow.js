@@ -72,6 +72,6 @@
     $.fn.coverFlow.defaultSettings = {
         items: [],
         itemSize: 200,
-        template: "<ul id='coverFlowItems'>{{each $data.items}}<li><a href='${$value.url}' tabindex='-1'><img src='${$value.image[3]['#text']}' width=${$data.itemSize} height=${$data.itemSize} /></a></li>{{/each}}</ul>"
+        template: "<ul id='coverFlowItems'>{{each $data.items}}<li><a href='${$value.url}' tabindex='-1'><img src='${$value.image}' width=${$data.itemSize} height=${$data.itemSize} /></a></li>{{/each}}</ul>"
     };
 })(jQuery);
