@@ -21,6 +21,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +69,7 @@
     <Content Include="libraries\jquery-1.7.1.js" />
     <Content Include="libraries\jquery.tmpl.js" />
     <Content Include="libraries\Silverlight.js" />
+    <Content Include="silverlight.html" />
     <Content Include="styles\coverflow_jquery.css" />
     <Content Include="styles\master.css" />
     <Content Include="Web.config" />
