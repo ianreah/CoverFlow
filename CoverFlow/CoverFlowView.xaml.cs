@@ -34,10 +34,11 @@ namespace CoverFlow
             // TODO: Bind this to a user input in the UI?
             viewModel.Username = "ianreah";
 
+	        HtmlPage.Document.AttachEvent("onkeydown", HtmlDocument_KeyDown);
             HtmlPage.Plugin.Focus();
         }
 
-        void ViewModelPropertyChanged(object sender, PropertyChangedEventArgs eventArgs)
+	    void ViewModelPropertyChanged(object sender, PropertyChangedEventArgs eventArgs)
         {
             if (eventArgs.PropertyName == "CurrentItemIndex")
             {
@@ -71,7 +72,22 @@ namespace CoverFlow
             }
         }
 
-        private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
+		private void HtmlDocument_KeyDown(object sender, HtmlEventArgs htmlEventArgs)
+		{
+			var key = htmlEventArgs.KeyCode;
+			if (key == 39)
+			{
+				viewModel.NextItem();
+			}
+
+			if (key == 37)
+			{
+				viewModel.PreviousItem();
+			}
+
+		}
+
+		private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             Animate();
         }
