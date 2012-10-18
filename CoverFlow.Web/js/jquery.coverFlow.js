@@ -36,10 +36,21 @@
         $(this._items[this._currentIndex + 1]).addClass("right-1");
         $(this._items[this._currentIndex + 2]).addClass("right-2");
 
+    	// The items container moves to bring the current item into position
         var position = this._currentIndex * this._pluginSettings.itemSize;
+
+    	// Perspective origin is the center of the current item (to keep the perspective symetrical)
         var perspectiveOrigin = position + (this._pluginSettings.itemSize / 2);
+
+    	// The container moves to the left (negative) as current index increases
+        position *= -1;
+
+    	// A 50% left margin on the container centralises the left-edge of the current item
+    	// Offset by 1/2 item width here to centralise on the center of the current item
+        position -= (this._pluginSettings.itemSize / 2);
+
         this._itemsContainer.css("-webkit-perspective-origin-x", perspectiveOrigin + "px");
-        this._itemsContainer.css("-webkit-transform", "translateX(-" + position + "px)");
+        this._itemsContainer.css("-webkit-transform", "translateX(" + position + "px)");
     };
 
     $.fn.coverFlow = function (settings) {
